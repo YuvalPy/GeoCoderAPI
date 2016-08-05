@@ -33,7 +33,7 @@ class testgeocoderers(unittest.TestCase):
 
     def testfakeReverseCode(self):
     	result = reversegeocode((11.11, 22.22))
-    	self.assertEquals(result, 'Negative Test st.')
+    	self.assertNotEquals(result, 'Negative Test st.')
 
 
     
